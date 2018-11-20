@@ -57,7 +57,7 @@ a:active {
 /* Header Style */
 .container>header {
       margin: 0 auto;
-      padding: 2em;
+      padding: 90px 0px 0px;
 }
 
 .container>header {
@@ -68,7 +68,7 @@ a:active {
 .container>header h1 {
       font-size: 2.625em;
       line-height: 1.3;
-      margin: 0;
+      margin: 0px 0px 30px 0px ;
       font-weight: 300;
 }
 
@@ -139,7 +139,7 @@ a:active {
 .codrops-demos a {
       display: inline-block;
       margin: 0.5em;
-      padding: 0.7em 1.1em;
+      padding: 15px 40px;
       border: 3px solid #6b7381;
       color: #6b7381;
       font-weight: 700;
@@ -148,7 +148,11 @@ a:active {
 .codrops-demos a:hover,
 .codrops-demos a.current-demo,
 .codrops-demos a.current-demo:hover {
-      opacity: 0.6;
+    border: 3px solid #242e6d;
+    background-color: #242e6d;
+    color: #FFDA8F;
+    text-decoration:none;
+    /* font-size: 20px; */
 }
 
 @media screen and (max-width: 25em) {
