@@ -5,131 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>星月天空</title>
-
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- css -->
-    <link href="/CSS/main.css" rel="stylesheet">
-
-    <style>
-        .information {
-            width: 100%;
-            height: 100vh;
-            background-color: #BECFFF;
-            padding-top: calc((100vh - 656px) / 2);
-        }
-
-        .blackboard {
-            /* width: 1170px;
-        height: 656px;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url('/99-網頁素材/03-園區資訊/blackboard.jpg');
-        background-size: cover;
-        background-position: center; */
-            width: 1170px;
-            ;
-            height: 656px;
-            margin-left: auto;
-            margin-right: auto;
-            background-image: url('/99-網頁素材/03-園區資訊/board.jpg');
-            background-size: cover;
-            /* background-position: center; */
-        }
-
-        /* .blackboardText {
-        width: 50%;
-        height: 50%;
-        padding-top: 8%;
-        padding-left: 10%;
-        float: left;
-
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
     }
 
-    .blackboardPic {
-        width: 50%;
-        height: 50%;
-        float: left;
-        padding-top: 7%;
-        padding-left: 4%;
+    html,
+    body {
+        margin: 0;
+        font-family: '微軟正黑體';
     }
 
-    .title {
-        color: #FFD88D;
-
-    }
-
-    .textColor {
-        color: #FFD88D;
-        font-size: 16pt;
-    }
-
-    .traffic{
+    .information {
         width: 100%;
         height: 100vh;
-        background-color: #242E6D;
+        background-color: #BECFFF;
+        padding-top: calc((100vh - 656px) / 2);
     }
 
-    .trafficTitle{
-        width: 100%;
-        height: 236px;
-        background-color:brown;
-    } */
-    </style>
+    .blackboard {
+        max-width: 50%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+    #bigBoard {
+        max-width: 100%;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+    }
 
-</head>
+    #smallBoard {
+        display: none;
+    }
+
+    @media only screen and (max-width:768px) {
+        #bigBoard {
+            display: none;
+        }
+
+        #smallBoard {
+            max-width: 100%;
+            height: auto;
+            display: inline;
+        }
+    }
+</style>
 
 <body>
     <div class="news">
         <div class="information">
             <div class="blackboard">
-                <!-- <div class="blackboardText">
-                    <h1 class="title">營業時間</h1>
-                    <img src="/99-網頁素材/03-園區資訊/line.png" alt="">
-                    <p class="textColor">平日：17:00 至 24:00</p>
-                    <p class="textColor">假日：11:00 至 24:00</p>
-                    <br>
-                    <h1 class="title">入園門票</h1>
-                    <img src="/99-網頁素材/03-園區資訊/line.png" alt="">
-                    <p class="textColor">一律100元，可扺用餐50元（90公分以下免收）</p>
-                    <p class="textColor">（跨年、農曆春節，門票150元，可扺用餐50元）</p>
-                </div>
-                <div class="blackboardPic">
-                    <img id="thumbtack" src="/99-網頁素材/03-園區資訊/thumbtack.png" alt="">
-                </div> -->
-            </div>
-        </div>
-        <div class="traffic">
-            <div class="trafficTitle">
-                <h1 class="title">交通資訊</h1>
+                <img id="bigBoard" src="/99-網頁素材/03-園區資訊/board.jpg" alt="">
+                <img id="smallBoard" src="/99-網頁素材/03-園區資訊/board-small.png" alt="">
             </div>
         </div>
     </div>
-
-
-
-    <!-- bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
-    <!-- swiper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 </body>
 
 </html>
