@@ -17,38 +17,8 @@
 
       <!-- css -->
       <link href="/CSS/main.css" rel="stylesheet">
+      <link href="/CSS/about.css" rel="stylesheet">
       <style>
-            #page02_main {
-                  width: 100%;
-                  height: 835px;
-                  background-color: rgba(0, 0, 0, 0);
-                  padding-top: 85px;
-            }
-
-            .bg {
-                  position: fixed;
-                  z-index: -1;
-
-            }
-
-            #page02_main_01 {
-                  width: 440px;
-                  height: 465px;
-                  background-color: rgba(0, 0, 0, 0);
-                  margin-left: auto;
-                  margin-right: auto;
-            }
-
-            #page_02_logo {
-                  width: 295px;
-                  height: 135px;
-                  margin-left: auto;
-                  margin-right: auto;
-                  margin-bottom: 40px;
-                  background-image: url('/img/icon/logo-color-02.png');
-                  background-size: cover;
-            }
-
             h2 {
                   margin: 0px;
                   padding: 0px;
@@ -68,36 +38,38 @@
                   color: #FFDA8F;
                   font-family: '細明體_HKSCS';
             }
+
+
+            
       </style>
 
 </head>
 
 <body>
-
-      <div class="bg">
-            <video id="myvideo" height="100%" width="1920px" poster="/style/img/sea.jpg" autoplay loop muted=""
-                  controls>
-                  <source src="/img/01-about/nightsky.mp4">
-                  <source src="/img/01-about/nightsky.mp4">
-            </video>
-            <script>
-                  myVid = document.getElementById("myvideo");
-                  myVid.playbackRate = 0.3;
-            </script>
-      </div>
-      <div id="page02_main">
-            <div id="page02_main_01">
-                  <div id="page_02_logo"></div>
-                  <h2>幸福的起點</h2>
-                  <p>南投市猴探井遊憩區旁的星月天空，是八卦山最高的景觀餐廳，</p>
-                  <p>精心設計的園區裡處處都有小確幸，</p>
-                  <p>樹下的躺椅，搖曳的許願卡，流星般的燈光藝術…</p>
-                  <p>您有試過動物在身邊自由穿梭，零距離的接觸大自然嗎？</p>
-                  <p>有時就這樣靜靜的躺著，細聞風中的訊息，</p>
-                  <p>聆聽山林的呼喚，睜開眼就是繁星點點，</p>
-                  <p>那一刻，是打從心靈的感動。俯瞰璀璨夜景，</p>
-                  <p>每一盞燈，都在述說台灣的故事，</p>
-                  <p>照亮著一個家庭，或照亮一條回家的路。 </p>
+      <div id="section-02">
+            <div class="block">
+                  <div class="block-flex">
+                        <div class="container">
+                              <div class="logo"></div>
+                              <h2>幸福的起點</h2>
+                              <p>南投市猴探井遊憩區旁的星月天空，是八卦山最高的景觀餐廳，</p>
+                              <p>精心設計的園區裡處處都有小確幸，</p>
+                              <p>樹下的躺椅，搖曳的許願卡，流星般的燈光藝術…</p>
+                              <p>您有試過動物在身邊自由穿梭，零距離的接觸大自然嗎？</p>
+                              <p>有時就這樣靜靜的躺著，細聞風中的訊息，</p>
+                              <p>聆聽山林的呼喚，睜開眼就是繁星點點，</p>
+                              <p>那一刻，是打從心靈的感動。俯瞰璀璨夜景，</p>
+                              <p>每一盞燈，都在述說台灣的故事，</p>
+                              <p>照亮著一個家庭，或照亮一條回家的路。 </p>
+                        </div>
+                  </div>
+            </div>
+            <div class="bg">
+                  <video id="myvideo" height="114%" width="100%" poster="/style/img/sea.jpg" autoplay loop muted=""
+                        controls>
+                        <source src="/img/01-about/nightsky.mp4">
+                        <source src="/img/01-about/nightsky.mp4">
+                  </video>
             </div>
       </div>
 
@@ -117,6 +89,11 @@
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
             AOS.init();
+      </script>
+
+      <script>
+            myVid = document.getElementById("myvideo");
+            myVid.playbackRate = 0.3;
       </script>
 </body>
 

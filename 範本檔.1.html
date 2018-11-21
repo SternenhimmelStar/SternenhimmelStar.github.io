@@ -15,137 +15,9 @@
       <!-- AOS -->
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-
+      <link rel="stylesheet" href="/CSS/banner.css">
       <style>
-            .section-01-bg {
-                  position: relative;
-            }
 
-            .section-01-mask.pc{
-                  width: 100%;
-                  height: 56.05vw;
-                  background-color: rgba(0, 0, 0, 0.5);;
-                  position: absolute;
-                  top: 0;
-                  z-index: -1;
-            }
-
-            .section-01-bg img {
-                  max-width: 100%;
-                  height: auto;
-                  position: absolute;
-                  z-index: -1;
-            }
-
-            .section-block.pc{
-                  position: absolute;
-                  width: 100%;
-            }
-            .section-block.pc .navbar{
-                  background-color: transparent!important;
-            }
-            .LOGO{
-                  margin-right: 8%;
-            }
-            .LOGO img{
-                  width: 100%;
-            }
-            .nav-item a{
-                  font-size: 25px;
-                  border: 700;
-                  /* text-shadow: 0.1em 0.1em 0.2em #ffffff; */
-            }
-            .navbar {
-                  align-items: flex-start;
-            }
-            .navbar-light .navbar-nav .nav-link{
-                  color: #ffd98e60;
-            }
-            .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-                  color: #ffd98e80;
-                  border: 500;
-}
-            .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-                  color:#FFDA8F;
-            }
-            .section-01-title{
-                  position: absolute;
-                  top: 50%;
-                  width: 100%;
-                  text-align: center;
-            }
-            .section-01-title h1{
-                  color:#FFDA8F;
-                  font-size: 70px;
-            }
-            .mob{
-                  display: none;
-            }
-
-            .navbar-expand-lg .navbar-collapse {
-                  margin-top: auto;
-            }
-
-      @media (max-width:996px){
-            .mob{
-                  display: block;
-                  position: absolute;
-                  width: 100%;
-                  z-index: 2;
-            }
-            .mob button{
-                  margin-top: 20px;
-            }
-            .bg-light {
-                  background-color: #0f24388e!important;
-            }
-            .mob .container-fluid{
-                  padding: 0;
-            }
-            .navbar-nav li:nth-child(1){
-                  margin-top: 25px;
-            }
-            .nav-link{
-                  line-height: 50px;
-                  text-align: center;
-            }
-            .LOGO img{
-                  width: unset;
-            }
-            .pc{
-                  display: none;
-            }
-            .navbar-nav {
-                  height: calc( 100vh - 56px );
-            }
-            .navbar-expand-lg .navbar-collapse {
-                  margin-top: auto;
-            }
-      .mob-bg{
-            background-image: url("../img/01-about/about_01-phone.png");
-            background-size: cover;
-            height: 66vh;
-            background-repeat: no-repeat;
-            position: absolute;
-            z-index: -1;
-      }
-
-      .section-01-mask.mob{
-                  width: 100%;
-                  height: 66vh;
-                  background-color: rgba(0, 0, 0, 0.5);
-                  position: absolute;
-                  top: 0;
-                  z-index: 0;
-            }
-            .section-01-title {
-                  top: 25%;
-                  z-index: 1;
-            }
-      }
-      #chc01,#chc02,#chc03{
-            color:#FFDA8F;
-      }
       </style>
 </head>
 
@@ -155,7 +27,6 @@
                   <div class="container">
                         <nav class="navbar navbar-expand-lg navbar-light bg-light col-12">
                               <div class="LOGO col-3"><img src="/img/icon/Logo.svg" alt=""></div>
-
                               <div class="collapse navbar-collapse col-7 d-flex justify-content-end" id="navbarNav">
                                     <ul class="navbar-nav col-12 justify-content-around">
                                           <li class="nav-item active">
@@ -168,7 +39,7 @@
                                                 <a id="chc01" class="nav-link" href="Introduction_surroundings.html">園區資訊</a>
                                           </li>
                                           <li class="nav-item">
-                                                <a id="chc02"class="nav-link" href="food.html">美食饗宴</a>
+                                                <a id="chc02" class="nav-link" href="food.html">美食饗宴</a>
                                           </li>
                                           <li class="nav-item">
                                                 <a id="chc03" class="nav-link" href="Attractions.html">周邊景點</a>
@@ -210,14 +81,14 @@
 
                   </div>
             </div>
-            <div class="section-01-title">
+            <div class="title">
                   <h1>園區介紹</h1>
             </div>
-            <div class="section-01-bg">
+            <div class="bg">
                   <img class="pc" src="/img/01-about/about-01.png" alt="">
                   <div class="mob mob-bg"></div>
-                  <div class="section-01-mask pc"></div>
-                  <div class="section-01-mask mob"></div>
+                  <div class="mask pc"></div>
+                  <div class="mask mob"></div>
 
             </div>
 
