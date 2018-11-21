@@ -112,3 +112,6 @@ span {
       background-image: url('/style/img/06-menu-beer.png');
       background-size: cover;
 }
+p{
+      text-align: left;
+}
