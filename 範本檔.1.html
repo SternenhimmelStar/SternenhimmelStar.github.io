@@ -23,8 +23,8 @@
 
             .section-01-mask {
                   width: 100%;
-                  height: 100vh;
-                  background-color: #01283660;
+                  height: 56.05vw;
+                  background-color: #01283675;
                   position: absolute;
                   top: 0;
                   z-index: -1;
@@ -37,47 +37,115 @@
                   z-index: -1;
             }
 
-            .section-block{
+            .section-block.pc{
                   position: absolute;
                   top:70px;
                   width: 100%;
             }
-            .section-block .navbar{
+            .section-block.pc .navbar{
                   background-color: transparent!important;
             }
             .LOGO{
-                  margin-right: 15%;
+                  margin-right: 8%;
             }
             .LOGO img{
                   width: 100%;
+            }
+            .nav-item a{
+                  font-size: 25px;
+                  border: 700;
+                  /* text-shadow: 0.1em 0.1em 0.2em #ffffff; */
+            }
+            .navbar {
+                  align-items: flex-start;
+            }
+            .navbar-light .navbar-nav .nav-link{
+                  color: #ffd98e60;
+            }
+            .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+                  color: #ffd98e80;
+                  border: 500;
+}
+            .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+                  color: #ffd98e;
+            }
+            .section-01-title{
+                  position: absolute;
+                  top: 50%;
+                  width: 100%;
+                  text-align: center;
+            }
+            .section-01-title h1{
+                  color: #ffd98e;
+                  font-size: 70px;
+            }
+            .mob{
+                  display: none;
+            }
 
+.navbar-expand-lg .navbar-collapse {
+margin-top: auto;
+}
+
+            @media (max-width:996px){
+                  .mob{
+                  display: block;
+                  position: absolute;
+                  width: 100%;
+            }
+            .bg-light {
+    background-color: #0f24388e!important;
+}
+            .mob .container-fluid{
+                  padding: 0;
+            }
+            .navbar-nav li:nth-child(1){
+                  margin-top: 25px;
+            }
+            .nav-link{
+                  line-height: 50px;
+                  text-align: center;
+            }
+
+            .pc{
+                  display: none;
+            }
+            .section-01-title {
+                  z-index: -1;
+            }
+            .navbar-nav {
+                  height: calc( 100vh - 56px );
+            }
+            .navbar-expand-lg .navbar-collapse {
+margin-top: auto;
+}
             }
       </style>
 </head>
 
 <body>
       <div id="section-01">
-            <div class="section-block">
+            <div class="section-block pc">
                   <div class="container">
                         <nav class="navbar navbar-expand-lg navbar-light bg-light col-12">
                               <div class="LOGO col-3"><img src="/img/icon/Logo.svg" alt=""></div>
-                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                              </button>
+
                               <div class="collapse navbar-collapse col-7 d-flex justify-content-end" id="navbarNav">
-                                    <ul class="navbar-nav col-12 d-flex justify-content-around">
+                                    <ul class="navbar-nav col-12 justify-content-around">
                                           <li class="nav-item active">
-                                                <a class="nav-link" href="#">Home </a>
+                                                <a class="nav-link" href="index.html">首頁</a>
+                                          </li>
+                                          <!-- <li class="nav-item">
+                                                <a class="nav-link" href="information.html">關於星月</a>
+                                          </li> -->
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="Introduction_surroundings.html">園區資訊</a>
                                           </li>
                                           <li class="nav-item">
-                                                <a class="nav-link" href="#">Features</a>
+                                                <a class="nav-link" href="food.html">美食饗宴</a>
                                           </li>
                                           <li class="nav-item">
-                                                <a class="nav-link" href="#">Pricing</a>
-                                          </li>
-                                          <li class="nav-item">
-                                                <a class="nav-link disabled" href="#">Disabled</a>
+                                                <a class="nav-link" href="Attractions.html">周邊景點</a>
                                           </li>
                                     </ul>
                               </div>
@@ -85,9 +153,44 @@
 
                   </div>
             </div>
+            <div class="section-block mob">
+                  <div class="container-fluid">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light col-12">
+                              <div class="LOGO col-3"><img src="/img/icon/Logo.svg" alt=""></div>
+                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav-mob"
+                                    aria-controls="navbarNav-mob" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarNav-mob">
+                                    <ul class="navbar-nav">
+                                          <li class="nav-item active">
+                                                <a class="nav-link" href="index.html">首頁</a>
+                                          </li>
+                                          <!-- <li class="nav-item">
+                                                            <a class="nav-link" href="information.html">關於星月</a>
+                                                      </li> -->
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="Introduction_surroundings.html">園區資訊</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="food.html">美食饗宴</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="Attractions.html">周邊景點</a>
+                                          </li>
+                                    </ul>
+                              </div>
+                        </nav>
+
+                  </div>
+            </div>
+            <div class="section-01-title">
+                  <h1>園區介紹</h1>
+            </div>
             <div class="section-01-bg">
                   <img src="/img/01-about/about-01.png" alt="">
                   <div class="section-01-mask"></div>
+
             </div>
 
 
