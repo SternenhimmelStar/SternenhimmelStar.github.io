@@ -24,5 +24,66 @@ p {
       text-align: center;
       font-size: 15px;
       color: #FFDA8F;
-      font-family: '細明體_HKSCS';
+      font-family: '微軟正黑體';
+}
+
+span {
+      margin: 0px;
+      padding: 0px;
+      text-align: center;
+      font-size: 15px;
+      color: #FFDA8F;
+      font-family: '微軟正黑體';
+}
+
+/* footer */
+footer {
+      background-color: #152941;
+      text-align: center;
+      padding: 40px 0px 30px;
+}
+
+footer .logo {
+      margin-bottom: 25px;
+}
+
+footer .logo img {
+      width: 200px;
+}
+
+footer .icon {
+      margin-bottom: 25px;
+}
+
+footer .icon div {
+      display: inline-block;
+      padding: 0px 7.5px;
+}
+
+footer .icon img {
+      width: 30px;
+}
+
+footer .content {
+      line-height: 30px;
+}
+
+footer span {
+      letter-spacing: 3px;
+}
+
+@media(max-width:576px) {
+
+      /* footer */
+      footer {
+            padding: 40px 15px 30px;
+      }
+
+      footer span {
+            font-size: 12px;
+      }
+
+      footer div:nth-child(3) span {
+            letter-spacing: 2px;
+      }
 }
