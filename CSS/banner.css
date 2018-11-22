@@ -59,6 +59,7 @@
       border: 700;
       color: #FFDA8F;
 }
+
 /* 
 #section-01 .navbar-light .navbar-nav .nav-link {
       color: #ffd98e60;
@@ -89,7 +90,11 @@
 /* #chc01,#chc02,#chc03{
       color:#FFDA8F;
 } */
-
+@media (max-width:1200px) {
+      #section-01 .nav-item a {
+            font-size: 20px;
+      }
+}
 
 @media (max-width:996px) {
       #section-01 {
