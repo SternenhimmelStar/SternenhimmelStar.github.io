@@ -35,7 +35,9 @@ span {
       color: #FFDA8F;
       font-family: '微軟正黑體';
 }
-
+#cdawrap{
+      display: none!important;
+}
 /* footer */
 footer {
       background-color: #152941;

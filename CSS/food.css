@@ -60,11 +60,6 @@ p {
       font-family: Adobe 明體 Std L;
 }
 
-span {
-      font-size: 13px;
-      color: #E24142;
-}
-
 .row2 {
       float: left;
 }
@@ -114,4 +109,8 @@ span {
 }
 p{
       text-align: left;
+}
+#section-01 {
+      width: 100%;
+      height: 41vw;
 }
