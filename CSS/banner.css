@@ -89,7 +89,14 @@
 /* #chc01,#chc02,#chc03{
       color:#FFDA8F;
 } */
-
+@media(max-width:1200px){
+      #section-01 .nav-item a {
+            font-size: 22px;
+            border: 700;
+            color: #FFDA8F;
+      }
+            
+}
 
 @media (max-width:996px) {
       #section-01 {
