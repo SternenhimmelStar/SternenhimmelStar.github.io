@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/CSS/Introduction/default.css">
+    <title>Document</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- css -->
+    <link href="/CSS/main.css" rel="stylesheet">
+    <link href="/CSS/banner.css" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            font-family: '微軟正黑體';
+        }
+
+        /* 營業時間&入園門票 */
+        .information {
+            width: 100%;
+            height: auto;
+            background-color: #BECFFF;
+            padding-top: 50px;
+            padding-bottom: 150px;
+        }
+
+        .blackboard {
+            max-width: 61%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #bigBoard {
+            max-width: 100%;
+            height: auto;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #smallBoard {
+            display: none;
+        }
+
+        /* 交通資訊 */
+        .traffic {
+            width: 100%;
+            height: auto;
+            background-color: #242E6D;
+        }
+
+        .trafficTitle {
+            width: 100%;
+            height: 20vh;
+            font-size: 30pt;
+            text-align: center;
+            color: #FFD88D;
+            padding-top: 60px;
+        }
+
+        .trafficMap {
+            width: 100%;
+            height: 40vh;
+        }
+
+        .trafficDesc {
+            max-width: 1170px;
+            height: auto;
+            padding-top: 45px;           
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 150px;
+
+        }
+
+        .trafficminMap {
+            height: auto;
+          
+        }
+
+        #trafficMinMapImg {
+            width: 100%;
+            height: auto;
+            
+        }
+
+
+        .trafficText {         
+            height: auto;       
+        }
+
+        #trafficTextImg {
+            width: 100%;
+            height: auto;
+            
+        }
+
+        .activity {
+            width: 100%;
+            height: auto;
+            background-color: #BECFFF;
+            text-align: center;
+
+        }
+
+        .activityTitle {
+            width: 100%;
+            height: 18vh;
+            font-size: 30pt;
+            text-align: center;
+            color: #242E6D;
+            padding-top: 60px;
+        }
+
+        .activityDesc {
+            max-width: 1170px;
+            padding-top: 10px;
+            padding-bottom: 150px;
+            margin-right: auto;
+            margin-left: auto;  
+
+        }
+
+        .program{
+            width: 350px;
+            height: auto;
+        }
+        
+        .programPic{
+            width: 100%;
+            height: 450px;
+        }
+
+
+        #programPicSize{
+            width: 100%;
+            height: 100%;
+        }
+        
+        .programText{
+            background-color: #242E6D;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .programTextTitle{
+            color: #FFD88D;
+            font-weight: bold;
+        }
+
+         @media only screen and (max-width:960px) {
+            .program{
+                margin-bottom: 50px;
+            }
+         }
+
+        @media only screen and (max-width:768px) {
+            #bigBoard {
+                display: none;
+            }
+
+            #smallBoard {
+                max-width: 100%;
+                height: 100%;
+                display: inline;
+            }
+
+            .trafficminMap {
+            margin-bottom: 50px;
+          
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="section-01">
+        <div class="section-block pc">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light col-12">
+                    <div class="LOGO col-3"><img src="/img/icon/Logo.svg" alt=""></div>
+                    <div class="collapse navbar-collapse col-7 d-flex justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav col-12 justify-content-around">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">首頁</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">關於星月</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Introduction_surroundings.html">園區介紹</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                                    <a  class="nav-link" href="Introduction_surroundings.html">園區資訊</a>
+                                              </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="food.html">美食饗宴</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Attractions_landscape.html">周邊景點</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="section-block mob">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light col-12">
+                    <div class="LOGO col-3"><img src="/img/icon/Logo.svg" alt=""></div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav-mob"
+                        aria-controls="navbarNav-mob" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav-mob">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">首頁</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">關於星月</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Introduction_surroundings.html">園區介紹</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="food.html">美食饗宴</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Attractions_landscape.html">周邊景點</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+        <div class="title">
+            <h1>園區資訊</h1>
+        </div>
+        <div class="bg">
+            <img class="pc" src="/img/02-information/information.png" alt="">
+            <div class="mob mob-bg"></div>
+            <div class="mask pc"></div>
+            <div class="mask mob"></div>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+
+    <div class="news">
+        <div class="information">
+            <div class="blackboard">
+                <img id="bigBoard" src="/img/02-information/board.jpg" alt="">
+                <img id="smallBoard" src="/img/02-information/board-small.png" alt="">
+            </div>
+        </div>
+        <div class="traffic">
+            <div class="trafficTitle">交通指引</div>
+            <div class="trafficMap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.4064822965333!2d120.6278706649843!3d23.910656184510625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x63902fc350a77f59!2z5pif5pyI5aSp56m654y05o6i5LqV5pmv6KeA6aSQ5buz!5e0!3m2!1szh-TW!2stw!4v1542762943681"
+                    width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+            <div class="trafficDesc">
+                <div class="row">
+                    <div class="trafficminMap col-md-6 col-sm-12 col-12"><img id="trafficMinMapImg" src="/img/02-information/minMap.png"
+                            alt=""></div>
+                    <div class="trafficText col-md-6 col-sm-12 col-12"><img id="trafficTextImg" src="/img/02-information/trafficDesc.png"
+                            alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="activity">
+            <div class="activityTitle">園區活動</div>
+            <nav class="codrops-demos">
+                <a href="information.html">動物餵食趣</a>
+                <a href="information_schedule.html">表演節目表</a>
+                <a class="current-demo" href="information_scheduleDesc.html">表演說明</a>
+            </nav>
+           <div class="activityDesc">
+               <div class="row">
+                   <div class="program col-lg-4 col-md-12 col-sm-12 col-12">                       
+                       <div class="programPic"><img id="programPicSize" src="/img/02-information/activity-01.jpg" alt=""></div>
+                       <div class="programText">
+                           <h5 class="programTextTitle">鸚鵡表演</h5>
+                           <p>看慣了會說話的鸚鵡嗎？<br>星月天空的鸚鵡<br>各個身懷絕技<br>絕對讓您大開眼界</p>
+                       </div>
+                   </div>
+
+                   <div class="program col-lg-4  col-md-12 col-sm-12 col-12">                       
+                        <div class="programPic"><img id="programPicSize" src="/img/02-information/activity-02.jpg" alt=""></div>
+                        <div class="programText">
+                            <h5 class="programTextTitle">民歌演唱</h5>
+                            <p>想要來場聽覺的饗宴嗎?<br>每天都有駐唱歌手在現場演唱<br>現場點歌並寫上祝福的話語<br>歌手用美妙的歌聲傳達情意</p>
+                        </div>
+                    </div>
+
+                    <div class="program col-lg-4 col-md-12 col-sm-12 col-12">                       
+                            <div class="programPic"><img id="programPicSize" src="/img/02-information/activity-03.jpg" alt=""></div>
+                            <div class="programText">
+                                <h5 class="programTextTitle">求婚、告白時間</h5>
+                                <p>想要一場浪漫的求婚或告白嗎？<br>將有專人為您量身打造、安排<br>讓您們有難忘的浪漫回憶<br>請洽求婚企劃專員0931-626331</p>
+                            </div>
+                        </div>
+               </div>
+           </div>
+
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="logo"><img src="/img/icon/Logo.svg" alt=""></div>
+            <div class="icon">
+                <div><a href="https://www.facebook.com/%E6%98%9F%E6%9C%88%E5%A4%A9%E7%A9%BA-191685834222185/"><img src="/img/icon/facebook.png"
+                            alt="facebook"></a></div>
+                <div><a href="https://www.instagram.com/explore/locations/264892870/"><img src="/img/icon/instagram.png"
+                            alt="instagram"></a></div>
+                <div><a href="m.me/191685834222185"><img src="/img/icon/email.png" alt="email"></a></div>
+            </div>
+            <div class="content">
+                <div><span>電話:04-92292999</span></div>
+                <div><span>地址:南投市猴探井街146巷</span></div>
+                <div><span>Copyright ©Sternenhimmel 2018 用於課程學習用途，素材如侵權，請來信告知。</span></div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <!-- swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
