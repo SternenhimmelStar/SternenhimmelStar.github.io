@@ -205,8 +205,15 @@ p {
 	height: 50px;
 	float: left;
       position: relative;
-      left:0px;
+      top:15px;
+      right:15px;
 	position: absolute;
+}
+
+@media(min-width:1155px){
+      #Burgersign_01,.Burgersign02{
+      display: none; 
+      }   
 }
 
 @media(max-width:1155px){
@@ -231,7 +238,7 @@ p {
 	position: absolute;
 	top: 75%;
 }
-#Burgersign:hover > ul{
+#Burgersign:hover > #Burgersign_01{
 	display: block;
 }
 #Burgersign_01{
