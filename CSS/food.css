@@ -59,6 +59,7 @@ p {
       font-size: 1vw;
       color: #242E6D;
       font-family: Adobe 明體 Std L;
+      padding: 5px;
 }
 
 .row2 {
@@ -183,5 +184,9 @@ p {
       hr {
             background-color: #242E6D;
             height:2px;
+      }
+      .dropdown-menu{
+            width: 100%;
+            text-align: center;
       }
 }
