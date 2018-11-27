@@ -1,4 +1,3 @@
-
 * {
       box-sizing: border-box;
       /* border: 2px solid black; */
@@ -11,8 +10,9 @@ body {
 
 #menu {
       width: 100%;
-      /* height: 1500px; *//*不要給高度*/
-      background-color:#BFD0FF;
+      /* height: 1500px; */
+      /*不要給高度*/
+      background-color: #BFD0FF;
 }
 
 #page_04_title {
@@ -32,6 +32,7 @@ body {
       margin-left: auto;
       margin-right: auto;
 }
+
 .menu_box_L {
       width: 15%;
       height: 50px;
@@ -55,7 +56,7 @@ h3 {
 p {
       padding: 0px;
       margin: 0px;
-      font-size:1vw;
+      font-size: 1vw;
       color: #242E6D;
       font-family: Adobe 明體 Std L;
 }
@@ -63,50 +64,124 @@ p {
 .row2 {
       float: left;
 }
-.food_icon01{
+
+.food_icon01 {
       background-image: url('/style/img/06-menu-salad.png');
       background-size: cover;
 }
-.food_icon02{
+
+.food_icon02 {
       background-image: url('/style/img/06-menu-service.png');
       background-size: cover;
 }
-.food_icon03{
+
+.food_icon03 {
       background-image: url('/style/img/06-menu-noodles.png');
       background-size: cover;
 }
-.food_icon04{
+
+.food_icon04 {
       background-image: url('/style/img/06-menu-hot-pot.png');
       background-size: cover;
 }
-.food_icon05{
+
+.food_icon05 {
       background-image: url('/style/img/06-menu-chicken.png');
       background-size: cover;
 }
-.food_icon06{
+
+.food_icon06 {
       background-image: url('/style/img/06-menu-pudding.png');
       background-size: cover;
 }
-.food_icon07{
+
+.food_icon07 {
       background-image: url('/style/img/06-menu-green-tea.png');
       background-size: cover;
 }
-.food_icon08{
+
+.food_icon08 {
       background-image: url('/style/img/06-menu-paper.png');
       background-size: cover;
 }
-.food_icon09{
+
+.food_icon09 {
       background-image: url('/style/img/06-menu-teapot.png');
       background-size: cover;
 }
-.food_icon10{
+
+.food_icon10 {
       background-image: url('/style/img/06-menu-cocktail.png');
       background-size: cover;
 }
-.food_icon11{
+
+.food_icon11 {
       background-image: url('/style/img/06-menu-beer.png');
       background-size: cover;
 }
-p{
+
+p {
       text-align: left;
+}
+
+#menu02 {
+      display: none;
+
+}
+
+@media screen and (max-width:576px) {
+      #menu {
+            display: none;
+      }
+
+      #menu02 {
+            background-color: #BFD0FF;
+            display: block;
+      }
+
+      .box {
+            width: 300px;
+            height: auto;
+            /* border: 4px solid #242E6D; */
+            margin-left: auto;
+            margin-right: auto;
+      }
+
+      /* #main02,#main03,#main04,#main05,#main06,#main07,#main08,#main09,#main10,#main11{
+      display: none;
+  } */
+
+      .box {
+            display: none;
+            padding-bottom: 15px;
+      }
+
+      .box_show {
+            display: block;
+      }
+
+      .btn {
+            background-color: #242E6D;
+            color: #FFDA8F;
+            width: 100%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+      }
+
+      h3 {
+
+            margin-bottom: 25px;
+            text-align: center;
+      }
+
+      p {
+            font-size: 15px;
+            padding: 10px;
+            text-align: center;
+      }
+
+      hr {
+            background-color: #242E6D;
+            height:2px;
+      }
 }
