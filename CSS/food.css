@@ -154,7 +154,7 @@ p {
 
       .box {
             display: none;
-            padding-bottom: 15px;
+            padding-bottom: 200px;
       }
 
       .box_show {
@@ -165,7 +165,7 @@ p {
             background-color: #242E6D;
             color: #FFDA8F;
             width: 100%;
-            margin-top: 15px;
+            margin-top: 100px;
             margin-bottom: 15px;
       }
 
