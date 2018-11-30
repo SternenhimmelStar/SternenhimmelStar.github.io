@@ -7,7 +7,7 @@
 
 #bgcolor {
       width: 100%;
-      height:100vh;
+      height: 100vh;
       background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -33,12 +33,14 @@
       left: 50px;
       top: 60px;
 }
+
+
 /*讓左上角文字logo不見*/
-@media(max-width:1144px){
-      #page01_indexlogo{
+@media(max-width:1144px) {
+      #page01_indexlogo {
             display: none;
       }
-            }
+}
 
 #page01_naabar {
       width: 600px;
@@ -54,11 +56,12 @@ ul {
       padding: 0px;
       margin: 0px;
 }
-@media(max-width:1144px){
-     ul{
+
+@media(max-width:1144px) {
+      ul {
             display: none;
       }
-            }
+}
 
 li {
       padding: 0px;
@@ -68,7 +71,6 @@ li {
       margin-right: 50px;
       color: #FFDA8F;
 }
-
 
 #page01_main02 {
       width: 100%;
@@ -147,39 +149,18 @@ p {
       width: 100%;
       height: 90px;
 }
+
 /*讓右邊文字logo不見*/
-@media(max-width:884px){
-      #page01_textbox01_upbox{
+@media(max-width:884px) {
+      #page01_textbox01_upbox {
             display: none;
       }
-            }
-@media(max-width:884px){
-      #page01_textbox01_bmbox{
-                        display: none;
+}
+
+@media(max-width:884px) {
+      #page01_textbox01_bmbox {
+            display: none;
       }
-            }
-
-.iconbox {
-      width: 100%;
-      height: 25px;
-}
-
-.facebook {
-      background-image: url('../img/icon/facebook.png');
-      background-size: cover;
-      margin-bottom: 17.5px;
-}
-
-.instagram {
-      background-image: url('../img/icon/instagram.png');
-      background-size: cover;
-      margin-bottom: 17.5px;
-}
-
-.email {
-      background-image: url('../img/icon/email.png');
-      background-size: cover;
-
 }
 
 .carousel-indicators {
@@ -198,62 +179,76 @@ p {
       margin-right: 0px;
 }
 
-#Burgersign{
+#Burgersign {
       display: none;
-      background-color:rgba(0, 0, 0, 0); 
-	width:80px;
-	height: 50px;
-	float: left;
+      background-color: rgba(0, 0, 0, 0);
+      width: 80px;
+      height: 50px;
+      float: left;
       position: relative;
-      top:15px;
-      right:15px;
-	position: absolute;
+      top: 15px;
+      right: 15px;
+      position: absolute;
 }
 
-@media(min-width:1155px){
-      #Burgersign_01,.Burgersign02{
-      display: none; 
-      }   
-}
+@media(min-width:1155px) {
 
-@media(max-width:1155px){
-      #Burgersign{
-            display:inline-block;
+      #Burgersign_01,
+      .Burgersign02 {
+            display: none;
       }
-            }
-#line01,#line02,#line03{
+}
+
+@media(max-width:1155px) {
+      #Burgersign {
+            display: inline-block;
+      }
+}
+
+#line01,
+#line02,
+#line03 {
       width: 30px;
-	height: 6px;
-	background-color: #FFDA8F;
-	position: absolute;
-	left:50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
+      height: 6px;
+      background-color: #FFDA8F;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
 }
- #line01{
-	position: absolute;
-	top: 25%;
+
+#line01 {
+      position: absolute;
+      top: 25%;
 }
-#line03{
-	position: absolute;
-	top: 75%;
+
+#line03 {
+      position: absolute;
+      top: 75%;
 }
-#Burgersign:hover > #Burgersign_01{
-	display: block;
+
+#Burgersign:hover>#Burgersign_01 {
+      display: block;
 }
-#Burgersign_01{
-	float: none;/*有浮動會跟logo排列一起*/
-	margin: 0px;
-	padding: 0px;
-	line-height:normal;/*高度間距正常*/
-	text-align:left;/*水平間靠右*/
-	display: none;
-	position: absolute;/*不然會被覆蓋掉*/
+
+#Burgersign_01 {
+      float: none;
+      /*有浮動會跟logo排列一起*/
+      margin: 0px;
+      padding: 0px;
+      line-height: normal;
+      /*高度間距正常*/
+      text-align: left;
+      /*水平間靠右*/
+      display: none;
+      position: absolute;
+      /*不然會被覆蓋掉*/
       top: 50px;
 }
-.Burgersign02{
+
+.Burgersign02 {
       margin: 0px;
-	color: #FFDA8F;
+      color: #FFDA8F;
       z-index: 9999999;
       margin-bottom: 5px;
 }
